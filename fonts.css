@@ -1,0 +1,12 @@
+
+@font-face {
+        font-family: "TTLakes-Black";    
+     
+    src: url("fonts/TTLakes-Black/TTLakes-Black.eot"); 
+src: url("fonts/TTLakes-Black/TTLakes-Black.eot?#iefix") format("embedded-opentype"),
+url("fonts/TTLakes-Black/TTLakes-Black.woff") format("woff"), 
+url("fonts/TTLakes-Black/TTLakes-Black.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+    
+    } 
