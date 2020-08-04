@@ -4,62 +4,59 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="fonts.css">
+    <link rel="preload" href="fonts.css" as="font">
+    <link rel="stylesheet" href= "normalize.css">
     <title>Услуги и сервисы</title>
 </head>
 <body>
     <header>
-        <section class="headerIpad">
-                <div class="logo">
+        <section class="header-ipad">
+                    <div class="logo">
                     <ul>
-                    <li class="blockHeader__lebelOrder"> <img class ="blockHeader__pngburger" src="jpg/burger.png" alt="" style="vertical-align: middle" ><button class="blockHeader__buttonOrder"></button>
-                    </label>
-                    <li class="blockHeader__lebelStatus"><img class ="blockHeader__pmgGroup" src="jpg/Group.png" alt=""  ><button class="blockHeader__buttonStatus"></button>
-                    </li>
+                        <a href="#" class="block-header__lebel-order"> <img class ="block-header__pngburger" src="jpg/burger.png" alt="" style="vertical-align: middle" ></a>
+                        <a href="#"   class="logo__link"><img class ="logo__img" src="jpg/Group.png" alt="" >
+                        </a>
                     </ul>
                     </div>
 
-                    <div class="nuvBlock"> 
-                        <ul>
-                                            
-                    <li class="blockHeader__licall"><img class ="blockHeader__pngcall" src="jpg/call.png" alt="" style="vertical-align: middle" ><button class="blockHeader__buttonOrder"></button>
-                    </li>        
-                    <li class="blockHeader__lichat"> <img class ="blockHeader__pmgchat" src="jpg/chat.png" alt="" style="vertical-align: middle" width="37px" height="37px" ><button class="blockHeader__buttonStatus"></button>
-                    </li>
-                    <li class="blockHeader__liprofile"><img class ="blockHeader__pngprofile.png" src="jpg/profile.png" alt="" style="vertical-align: middle" ><button class="blockHeader__buttonOrder"></button>
-                    </li>
-                    <li class="blockHeader__lirepair"><img class ="blockHeader__pngOrder" src="jpg/repair.png" alt="" style="vertical-align: middle" ><button class="blockHeader__buttonOrder"></button>
-                    </li>
-                    <li class="blockHeader__licheckstatus"><img class ="blockHeader__pmgStatus" src="jpg/checkstatus.png" alt="" style="vertical-align: middle" width="37px" height="37px" ><button class="blockHeader__buttonStatus"></button>
-                    </li>
-                    </ul>
-                    </div>
+                <div class="nuvBlock"> 
+                        <ul>                                            
+                            <li class="block-header__licall"><img class ="block-header__pngcall" src="jpg/call.png" alt="" style="vertical-align: middle" ><button class="block-header__button-order"></button>
+                            </li>        
+                            <li class="block-header__lichat"> <img class ="block-header__pmgchat" src="jpg/chat.png" alt="" style="vertical-align: middle" width="40px" height="40px" ><button class="block-header__button-status"></button>
+                            </li>
+                            <li class="block-header__liprofile"><img class ="block-header__pngprofile.png" src="jpg/profile.png" alt="" style="vertical-align: middle" ><button class="block-header__button-order"></button>
+                            </li>
+                            <li class="block-header__lirepair"><img class ="block-header__png-order" src="jpg/repair.png" alt="" style="vertical-align: middle" ><button class="block-header__button-order"></button>
+                            </li>
+                            <li class="block-header__licheck-status"><img class ="block-header__pmg-status" src="jpg/checkstatus.png" alt="" style="vertical-align: middle" width="40px" height="40px" ><button class="block-header__button-status"></button>
+                            </li>
+                        </ul>
+                </div>
 
         </section>
-    
-        <section class="blockHeaderSectionOne">
-            
-            <h1 class="blockHeader__element">Услуги и сервисы</h1>
-            <div class="blockHeader__order">
-            <label class="blockHeader__lebelOrder"> Оставить заявку <img class ="blockHeader__pngOrder" src="jpg/repair.png" alt="" style="vertical-align: middle" ><button class="blockHeader__buttonOrder"></button>
-            </label>
-            <label class="blockHeader__lebelStatus">Статус ремонта <img class ="blockHeader__pmgStatus" src="jpg/checkstatus.png" alt="" style="vertical-align: middle" width="37px" height="37px" ><button class="blockHeader__buttonStatus"></button>
-            </label>
-            </div>
-        </section>  
-        <section  >
-            <nav class= "blockHeaderSectionTwo">           
+    <nav >     
+        <section class="block-header-section-one">
+                
+                <h1 class="block-header__element">Услуги и сервисы</h1>
+                <div class="block-header__order">    
+                <button type="button" class="block-header__button-repair"><span class="block-header__lebel-order">Оставить заявку</span></button>
+                <button type="button" class="block-header__button-checkstatus"><span class="block-header__button-statusspan">Статус ремонта</span></button>
+                </div>
+            </section>  
+            <section class= "block-header-section-two"  >     
+
                 <ul>                    
-                      <button type="button">Ремонтируемые бренды </button>
-                      <button type="button">Ремонтируемые устрой</button>
-                      <button class ="headerbuttonThree" type="button">Цены и услуги</button>
-                      <button class ="headerbuttonFour" type="button">Адреса сервисных центров</button>
-                      <button class ="headerbuttonFive" type="button">Специальные цены</button>
-                    
+                      <li><a href="#">Ремонтируемые бренды </a></li>
+                      <li><a href="#"class ="header-button-two">Ремонтируемые устройства </a></li>
+                      <li><a href="#"class ="header-button-three" type="button">Цены и услуги</a></li>
+                      <li><a href="#"class ="header-button-four" type="button">Адреса сервисных центров</a></li>
+                      <li><a href="#"class ="header-button-five" type="button">Специальные цены</a></li>                  
                 </ul>
-            </nav>
-
         </section>
+    </nav>
+
+        
 
         
     </header>
@@ -71,20 +68,17 @@
                 </h5>
                 <p>
                     Мы являемся авторизованным сервисным центром по ремонту техники Dell.
-                        Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                        Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br>
+                        <br>    
                         Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, 
                         что подтверждает большое количество постоянных клиентов. Мы гордимся тем, 
                         что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
                 </p>
-                <details class="main_details">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
-                    Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, 
-                    что подтверждает большое количество постоянных клиентов. Мы гордимся тем, 
-                    что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
             
-                    <summary>Читать далее
-                         </section>
-                   </details> 
+                    <button class="main_details" type="button">Читать далее
+                         
+                   </button> 
+            </section>       
             <section class="main-section">
                 <img class="main__img" src="jpg/cps.png">
             </section>
