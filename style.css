@@ -50,11 +50,7 @@ margin-left: 0px
 
   }
 
-  .logo__link{
-
-    display:  ;
-    
-  }
+ 
 
 button {
   display: flex; 
@@ -381,6 +377,16 @@ padding-left: 25px;
         border-right: 0px solid #EAEAEA;        
         border-radius: 0px;
         padding-right: 0px ;
+        width: 50%;
+      }
+
+      .logo__link{   
+
+      padding-right:02px;
+      padding-left: 0px;
+      margin-right: 0px;
+
+
       }
 
       .block-header__lebel-status{
@@ -392,16 +398,23 @@ padding-left: 25px;
         
       }
 
-      main{
+      body,.main-section,main,header,p,.main__img,.header-ipad{
         width: 100%;
       }
       
+      .main-section{
+        height: 15%;
+      }
+
+      p{
+        overflow: auto;
+      }
 
       .nuv-block{
-     
+        width: 50%;
         display: flex;
         justify-content:space-evenly;
-        padding-right: 25px;     
+           
 
       }
 
@@ -422,6 +435,7 @@ display:none ;
   .main{
     height: 55%;
     
+    
   }
 
   .main-content{
@@ -433,9 +447,33 @@ display:none ;
 }
 
 .block-header__lirepair{
-  padding-right: 25px;
-  padding-left  : 50%;
+  
   border-left: 3px solid #EAEAEA;
+  
+  padding-right: 5px;
+  margin-right: 0px;
+  padding-left: 15px;
+  margin-left: 10px;
+
+}
+.block-header__licheck-status{
+
+  height: 40px;
+  padding-right: 15px;
+  margin-right: 0px;
+  border-right-width: 00px;
+  border-left-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+
+}
+
+.block-header__pmg-status{
+
+  padding-right: 0px;
+  margin-right: 0px;
+
+
 }
   
      
