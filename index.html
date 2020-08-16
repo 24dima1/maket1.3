@@ -3,58 +3,48 @@
 <head>
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href= "css/fonts.css">
-    <link rel="stylesheet" href= "css/style.css">     
     <link rel="stylesheet" href= "css/normalize.css">
+    <link rel="stylesheet" href= "css/style.css">     
+    <link rel="stylesheet" href= "css/fonts.css">
     <title>Услуги и сервисы</title>
 </head>
 <body>
-    <header>
-        <div class="header-tablet">
-            <div  class="header-left">
-                <div class="header-burger">
-                    <a href="#" class="block-header__lebel-order"> <img class="block-header__pngburger" src="img/burger.png" alt="" style="vertical-align: middle" ></a>
-                </div>    
+    <header class="header"> 
+        <nav class="header-nav">         
+            <div class="div-header">
+                <div  class="div-header__menu-button">
+                       <a href="#" class="div-header__button"> <img class="block-header__pngburger" src="img/burger.png" alt="" style="vertical-align: middle" ></a>
                     <div class="logo">
-                    <a href="#" class="logo__link"><img class ="logo__img" src="img/Group.png" alt=""></a>
+                        <a href="#" class="logo__link"><img class ="logo__img" src="img/Group.png" alt=""></a>
+                    </div>
                 </div>
-            </div>
-            <div class="nuv-block"> 
-               <ul class="header-ul">                                            
-                    <li class="block-header__li"><button class="block-header__button"><img class ="block-header__pngcall" src="img/call.png" alt="" style="vertical-align: middle" ></button></li>        
-                    <li class="block-header__li"><button class="block-header__button"><img class ="block-header__pmgchat" src="img/chat.png" alt="" style="vertical-align: middle" width="40px" height="40px" ></button>
-                            </li>
-                    <li class="block-header__li block-header__li--border"><button class="block-header__button"><img class ="block-header__pngprofile.png" src="img/profile.png" alt="" style="vertical-align: middle" ></button></li>
-                    <li class="block-header__li block-header__li--padding"><button class="block-header__button"><img class ="block-header__png-order" src="img/repair.png" alt="" style="vertical-align: middle" ></button></li>
-                    <li class="block-header__li block-header__li--height"><button class="block-header__button-status"><img class ="block-header__pmg-status" src="img/checkstatus.png" alt="" style="vertical-align: middle" width="40px" height="40px" ></button></li>
-                </ul>         
-            </div>
-        </div>
-    
-    </header>
-    <main class="main">
-        <nav class="main-nav">     
-            <section class="block-header-section-one">                
-                <h1 class="block-header__element">Услуги и сервисы</h1>
-                <div class="block-header__order">    
-                    <button type="button" class="block-header__button-repair"><span class="block-header__lebel-order">Оставить заявку</span></button>
-                    <button type="button" class="block-header__button-checkstatus"><span class="block-header__button-statusspan">Статус ремонта</span></button>
-                </div>     
-            </section>
-            <section class= "block-header-section-two">  
-                <ul>                    
-                    <li><a href="#">Ремонтируемые бренды </a></li>
-                    <li><a href="#"class ="header-button-two">Ремонтируемые устройства </a></li>
-                    <li><a href="#"class ="header-button-three" type="button">Цены и услуги</a></li>
-                    <li><a href="#"class ="header-button-four" type="button">Адреса сервисных центров</a></li>
-                    <li><a href="#"class ="header-button-five" type="button">Специальные цены</a></li>                  
+                <div class="header__feedback"> 
+                    <ul class="header__feedback_ul">                                            
+                        <li class="header__feedback_li header__feedback_li--call "><button class="block-header__button block-header__button--call"><img class ="block-header__pngcall" src="img/call.png" alt="" style="vertical-align: middle" ></button></li>        
+                        <li class="header__feedback_li header__feedback_li--chat"><button class="block-header__button block-header__button--chat"><img class ="block-header__pmgchat" src="img/chat.png" alt="" style="vertical-align: middle" width="40px" height="40px" ></button></li>
+                        <li class="header__feedback_li header__feedback_li--border"><button class="block-header__button block-header__button--border"><img class ="block-header__pngprofile.png" src="img/profile.png" alt="" style="vertical-align: middle" ></button></li>
+                        <li class="header__feedback_li header__feedback_li--padding"><button class="block-header__button-repair"><span class="main-order__span">Оставить заявку</span></button></li>
+                        <li class="header__feedback_li header__feedback_li--height"><button class="block-header__button-status"><span class="main-order__statusspan">Статус ремонта</span></button></li>
+                    </ul>         
+                </div>
+            </div> 
+            <h1 class="title">Услуги и сервисы</h1>
+            <div class= "header__services">  
+                <ul class = "header__services_ul">                    
+                    <li class= "header__li"><a href="#"class ="header__services__item">Ремонтируемые бренды </a></li>
+                    <li class= "header__li"><a href="#"class ="header__services__item header__services__item--repairs">Ремонтируемые устройства </a></li>
+                    <li class= "header__li"><a href="#"class ="header__services__item header__services__item--prices" type="button">Цены и услуги</a></li>
+                    <li class= "header__li"><a href="#"class ="header__services__item header__services__item--address" type="button">Адреса сервисных центров</a></li>
+                    <li class= "header__li"><a href="#"class ="header__services__item header__services__item--discounts" type="button">Специальные цены</a></li>                  
                 </ul>
-            </section>
-        </nav>           
+            </div>
+        
+    </header>    
+    <main class="main">            
         <article class="main-content">
-            <div class="main-items">
-                <h5 >Отзывы</h5>
-                <p>
+            <div class="content">
+                <h5 class="content__reviews">Отзывы</h5>
+                <p class="content_p">
                     Мы являемся авторизованным сервисным центром по ремонту техники Dell.
                         Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br>
                         <br>    

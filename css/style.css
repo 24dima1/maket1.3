@@ -15,22 +15,7 @@ body{
   width: 25px;
   margin-left: 0px;
 }
-.header-tablet{    
-  flex-wrap: wrap;
-  justify-content: space-between;
-  box-sizing: border-box;
-  margin:  0px 0px 0px 0px;
-  display: none;  
-}         
-.block-header__order{
-  box-sizing: border-box;
-  padding-bottom: 0px;
-  padding-top: 38px;
-  display: flex;
-  justify-content: center;
-  align-content: space-between;
-}
-.header-left{  
+.div-header__menu-button{  
   display: flex;
   justify-content: center;
   align-content: space-between;
@@ -46,7 +31,7 @@ button {
   box-sizing: content-box;
   align-items: center;
   border:none;
-  background-color: #F8F8F8;
+  background-color:#F8F8F8;
   text-align: center;  
 }
 button[type="button"]:hover,
@@ -56,7 +41,7 @@ button[type="button"]:visited{
   outline: 0;
   text-align: center;
   box-sizing: border-box;
-  background: #FFFFFF;
+  background: #f8f8f8;
 }
 li:hover,
 li:focus,
@@ -66,11 +51,27 @@ li:visited{
   border: 2px solid #B8FFEC;
   box-sizing: border-box;
   border-radius: 6px;
-  transform: matrix(-1, 0, 0, 1);
   background: #FFFFFF;
   box-sizing: border-box;
 }
-ul{  
+.header__services__item:hover{
+  background: #FFFFFF; 
+}
+.header, html, .main-nav,
+.header__services__item,
+.main-order__button, .header__feedback_li, .main-nav,
+.div-header__menu-button, .div-header__menu-button,.header-burger,
+.header__feedback, .main-nav,.title,
+.main-order__button,.items-nav,.header__services, .content,
+.content__reviews, .main-section,
+.main__img
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+.header__services_ul,
+.header__feedback_ul
+{  
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -79,22 +80,33 @@ ul{
   line-height: 24px;   
   padding-left: 0px;        
 }
-li{
+li
+{
   list-style-type: none;
   border: none;
   outline: 0;
   border: 2px solid #F8F8F8;
   box-sizing: border-box;
   border-radius: 6px;
-  transform: matrix(-1, 0, 0, 1);
   background: #F8F8F8;
   box-sizing: border-box;    
+}
+.header__feedback_li--border{
+  border-right: 3px solid #EAEAEA;  
+  border-radius: 1px;
+  box-sizing: border-box; 
+  padding-right: 15px;
+  }  
+.header__feedback_li--padding :hover{
+  padding-left: 0px;
+}
+a:hover{
+  background: #F8F8F8;
 }
 a{
   box-sizing: border-box;    
   text-decoration: none;
   border:none;
-  background-color: #F8F8F8;
   font-family: 'TTLakes-Medium';
   font-size: 16px;
   line-height: 24px;
@@ -103,11 +115,11 @@ a{
   padding-right: 22px;
   padding-left: 22px;
   color: #7E7E82;
-  background-color: #FFFFFF;
+  background-color: #F8F8F8;
   height: auto;
   width: auto;
 }
-.block-header__element{
+.title{
   font-family:"TTLakes-Bold";
   font-size: 28px;
   line-height: 40px;
@@ -120,13 +132,9 @@ a{
   margin-left: 0px;
   padding-left: 35px;
   text-align: center;
+   display: flex;
 }
-.block-header-section-one{
-  display: flex;
-  justify-content: space-between;     
-  box-sizing: border-box;
-}
-.block-header-section-two{
+.block-header-header__services{
   display: flex;
   justify-content: space-between; 
   list-style: none;
@@ -142,6 +150,7 @@ a{
   box-sizing: border-box;
   margin-top: 0;
   padding:  34px 34px 34px 34px;
+  width: 100%;
 }
 .main-section{
   box-sizing: border-box;
@@ -152,12 +161,9 @@ a{
 }
 .main__img{
   width:531px ; 
-  height:307px ; 
+  heisght:307px ; 
   box-sizing: border-box;
 }
-.main_details {
-  display: block;
-}  
 .main_details {
   display: block;
   font-family: "TTLakes-Medium";
@@ -173,7 +179,7 @@ a{
   content:url(../img/icon1.jpg) ;
   padding-right: 5px;  
 }
-p{
+.content_p{
   box-sizing: border-box;    
   height: 165px;
   width: 490px;
@@ -183,22 +189,18 @@ p{
   letter-spacing: 0.2px;
   color: #1B1C21;
   margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
-h5{
+.content__reviews{
   color:#7E7E82;
   font-family: "TTLakes-Medium";
   font-size: 16px;
   line-height: 24px;
   margin-top: 0px;
 } 
-.block-header__li--border{
-  border-right: 3px solid #EAEAEA;  
-  border-radius: 1px;
-  box-sizing: border-box; 
-  padding-right: 15px;
-  }  
-.block-header__li--padding{
-  padding-left: 12px;
+.header__feedback_li--padding{
+  padding-left: 0px;
 }
 .block-header__button-repair::after{
   content: url("../img/repair.png");
@@ -206,8 +208,8 @@ h5{
   display: flex;
   justify-content: center;
   width: 70px;
-}  
-.block-header__button-checkstatus::after{
+  }  
+.block-header__button-status::after{
   content:url("../img/checkstatus.png");
   background-repeat: no-repeat;     
   display: flex;
@@ -215,39 +217,63 @@ h5{
   width: 70px;
 }
 
-@media (min-width: 768px) and (max-width: 1120px) {
-
-  .block-header__button{
-    background: #FFFFFF;
+@media (min-width: 1120px){
+  .header__feedback_li--call,
+  .header__feedback_li--chat,
+  .header__feedback_li--border,
+  .div-header__menu-button,
+  .div-header__button,
+  .logo{    
+    display: flex; 
+    box-sizing: border-box;
+    margin:  0px 0px 0px 0px;
+    display: none;  
+  } 
+  .header__feedback_li--padding{
+    transform: translate(530px,85px);
   }
-  .header-burger{
+  .header__feedback_li--height{
+    transform: translate(190px,85px);
+  }
+  .header__feedback_ul{
+    margin-top: -50px;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 1120px) {
+  .block-header__button--call,
+  .block-header__button--border,
+  .block-header__button--chat,
+  .div-header__button,
+  .logo__link{
+    background-color: #ffffff;
+  }  
+  .header__li{
+    background-color: #F8F8F8;
+  }
+  .main-order__span,
+  .main-order__statusspan{
+    display: none;
+  }
+  .header-burger,
+  .div-header__button{
     border-right: 3px solid #EAEAEA; 
     height: 40px;
   } 
-  .block-header__lebel-order{    
+  .main-order__span{    
     padding-right: 25px;        
   }
   .logo__link{
     padding-left: 25px;
   }
-  .header-tablet{    
+  .div-header{    
     display:flex;
     height: 16%;
     box-sizing: border-box; 
     justify-content:space-between;
     background-color:  #FFFFFF;
-  }
-  .block-header__order{
-    display: none;
-    box-sizing: border-box;   
-  }
-  body{    
-    margin:  0px 0px 0px 0px;  
-    box-sizing: border-box; 
-  }
-  .block-header-section-one{
-    height: 34%; 
-    box-sizing: border-box;    
+    border-bottom:1 px solid #D9FFF5;
   }
   .logo__img{        
     width: 70px;
@@ -256,7 +282,7 @@ h5{
   .logo{
     background: #FFFFFF;
   }
-  .nuv-block{       
+  .header__feedback{       
     padding-right: 15px;   
     background: #FFFFFF;  
   }
@@ -265,95 +291,72 @@ h5{
     border:#FFFFFF;  
     padding-right: 10px;
   }
-  .block-header__pmg-status,.block-header__button-status{
+  .block-header__button-repair, 
+  .block-header__button-status{
     background: #FFFFFF;
-    padding:0px;
-    
+    padding:0px;    
   }
-
+  
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
-
-  body{   
-    width: 100%;
+@media  (max-width: 768px) {
+  .main-order__span,
+  .main-order__statusspan,
+  .header__feedback_li--call,
+  .header__feedback_li--chat,
+  .header__feedback_li--border,
+  .header__services__item--prices, 
+  .header__services__item--address, 
+  .header__services__item--discounts,
+  .header__services__item--repairs{
+    display: none;
   }
-  .header{
-    width: 100%;    
-  }
-  .header-tablet{
+  .div-header__button,
+  .logo__link{
+    background-color: #FFFFFF; 
+  } 
+  .div-header{
     box-sizing: border-box;
     display:flex;
     justify-content: space-between;
     height: 16%;
     width: 100%;
     margin-left: 0px;
-    background-color: #FFFFFF;    
+    background-color: #FFFFFF; 
+    border-bottom: 1px solid #D9FFF5;   
   }
-  .block-header__order{
-    display: none;
-    box-sizing: border-box;   
-  }
-   /*
-  div li{
-    background: #FFFFFF;
-    border:#FFFFFF;  
-    padding-right: 10px;
-  }
-  
-  .logo{
-    border-right: 0px solid #EAEAEA;        
-    border-radius: 0px;
-    padding-right: 0px ;
-    width: 50%;
-  }
- 
-  .logo__link{   
-    padding-right:02px;
-    padding-left: 0px;
-    margin-right: 0px;
-  }
-
-  .block-header__lebel-status{
-    border-right: 3px solid #EAEAEA;        
-    border-radius: 1px;
-    padding-right: 7px ;
-    width: 40px;
-    height: 40px;        
-  }
-  */
-  body,.main-section,main,header,p,.main__img,.header-tablet{
+  body, .main-section, main,
+  .content_p, .main__img, .div-header,
+  .content__reviews,
+  .content{
     width: 100%;
   }      
   .main-section{
     height: 15%;
   }
-  p{
+  .content_p{
     overflow: auto;
   }
-  .header-left{
+  .div-header__menu-button{
     width: 50%;
     display: flex;
     justify-content:space-evenly;         
   }
-  .nuv-block{
+  .header__feedback{
     width: 50%;
     display: flex;        
     justify-content: center; 
-  }
-  .block-header__li{
-    display:none ;
   }  
-  .block-header__li--padding,.block-header__li--height{
+  .header__feedback_li--padding, 
+  .header__feedback_li--height{
     display: flex;
     background-color:#ffffff;
     border: 0px solid #ffffff;
   }
-  .header-button-three, .header-button-four, .header-button-five,.header-button-two{
-    display:none ;
-  }
-  .block-header__button,.block-header__button-status{
-        background-color: #FFFFFF;   
+  .block-header__button,
+  .block-header__button-status,
+  .block-header__button-repair{
+    background-color: #FFFFFF;   
   }
   .logo__img{
     width: 70px;
@@ -364,24 +367,17 @@ h5{
   }
   .main-content{  
     flex-direction: column;
+    width: 100%;
   }
-  .block-header-section-two{
+  .block-header-header__services{
     width: 90%;
   }
-  /*
-  .block-header__li--padding{  
-    border-left: 3px solid #EAEAEA;  
-    padding-right: 5px;
-    margin-right: 0px;
-    padding-left: 15px;
-    margin-left: 10px;
-  }
-  */
-  .block-header__li--height{
+  .header__feedback_li--height
+  {
     height: 40px;
     padding-right: 15px;
     margin-right: 0px;
-    border-right-width: 00px;
+    border-right-width: 0px;
     border-left-width: 0px;
     border-top-width: 0px;
     border-bottom-width: 0px;
@@ -391,7 +387,7 @@ h5{
     margin-top: 6px;
     background: #ffffff;
   }  
-  .header-ul{
+  .header__feedback_ul{
     border-left: 3px solid #EAEAEA; 
     display: flex;
     justify-content:space-evenly;
