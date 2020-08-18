@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href= "css/normalize.css">
-    <link rel="stylesheet" href= "css/style.css">     
+    <link rel="stylesheet" href= "css/normalize.css">     
     <link rel="stylesheet" href= "css/fonts.css">
+    <link rel="stylesheet" href= "css/style.css">   
     <title>Услуги и сервисы</title>
 </head>
 <body>
@@ -13,34 +13,31 @@
         <nav class="header-nav">         
             <div class="div-header">
                 <div  class="div-header__menu-button">
-                       <a href="#" class="div-header__button"> <img class="block-header__pngburger" src="img/burger.png" alt="" style="vertical-align: middle" ></a>
+                        <button class="div-header__button"><img class="block-header__pngburger" src="img/burger.png" alt="" style="vertical-align: middle" ></button>
                     <div class="logo">
                         <a href="#" class="logo__link"><img class ="logo__img" src="img/Group.png" alt=""></a>
                     </div>
-                </div>
-                <div class="header__feedback"> 
-                    <ul class="header__feedback_ul">                                            
-                        <li class="header__feedback_li header__feedback_li--call "><button class="block-header__button block-header__button--call"><img class ="block-header__pngcall" src="img/call.png" alt="" style="vertical-align: middle" ></button></li>        
-                        <li class="header__feedback_li header__feedback_li--chat"><button class="block-header__button block-header__button--chat"><img class ="block-header__pmgchat" src="img/chat.png" alt="" style="vertical-align: middle" width="40px" height="40px" ></button></li>
-                        <li class="header__feedback_li header__feedback_li--border"><button class="block-header__button block-header__button--border"><img class ="block-header__pngprofile.png" src="img/profile.png" alt="" style="vertical-align: middle" ></button></li>
-                        <li class="header__feedback_li header__feedback_li--padding"><button class="block-header__button-repair"><span class="main-order__span">Оставить заявку</span></button></li>
-                        <li class="header__feedback_li header__feedback_li--height"><button class="block-header__button-status"><span class="main-order__statusspan">Статус ремонта</span></button></li>
-                    </ul>         
-                </div>
+                </div>                
+                    <ul class="header__feedback-list">                                            
+                        <li class="header__feedback-item header__feedback-item--call "><button class="block-header__button block-header__button--call"><img class ="block-header__pngcall" src="img/call.png" alt="" style="vertical-align: middle" ></button></li>        
+                        <li class="header__feedback-item header__feedback-item--chat"><button class="block-header__button block-header__button--chat"><img class ="block-header__pmgchat" src="img/chat.png" alt="" style="vertical-align: middle" width="40px" height="40px" ></button></li>
+                        <li class="header__feedback-item header__feedback-item--border"><button class="block-header__button block-header__button--border"><img class ="block-header__pngprofile.png" src="img/profile.png" alt="" style="vertical-align: middle" ></button></li>
+                        <li class="header__feedback-item header__feedback-item--padding"><button class="block-header__button-repair"><span class="main-order__span">Оставить заявку</span></button></li>
+                        <li class="header__feedback-item header__feedback-item--height"><button class="block-header__button-status"><span class="main-order__statusspan">Статус ремонта</span></button></li>
+                    </ul>               
             </div> 
-            <h1 class="title">Услуги и сервисы</h1>
-            <div class= "header__services">  
-                <ul class = "header__services_ul">                    
-                    <li class= "header__li"><a href="#"class ="header__services__item">Ремонтируемые бренды </a></li>
-                    <li class= "header__li"><a href="#"class ="header__services__item header__services__item--repairs">Ремонтируемые устройства </a></li>
-                    <li class= "header__li"><a href="#"class ="header__services__item header__services__item--prices" type="button">Цены и услуги</a></li>
-                    <li class= "header__li"><a href="#"class ="header__services__item header__services__item--address" type="button">Адреса сервисных центров</a></li>
-                    <li class= "header__li"><a href="#"class ="header__services__item header__services__item--discounts" type="button">Специальные цены</a></li>                  
-                </ul>
-            </div>
-        
+            <h1 class="title">Услуги и сервисы</h1>                   
     </header>    
-    <main class="main">            
+    <main class="main">     
+        <nuv class= "header__services">  
+            <ul class = "header__services-list">                    
+                <li class= "header__services-item"><a href="#"class ="header__services__item">Ремонтируемые бренды </a></li>
+                <li class= "header__services-item"><a href="#"class ="header__services__item header__services__item--repairs">Ремонтируемые устройства </a></li>
+                <li class= "header__services-item"><a href="#"class ="header__services__item header__services__item--prices" type="button">Цены и услуги</a></li>
+                <li class= "header__services-item"><a href="#"class ="header__services__item header__services__item--address" type="button">Адреса сервисных центров</a></li>
+                <li class= "header__services-item"><a href="#"class ="header__services__item header__services__item--discounts" type="button">Специальные цены</a></li>                  
+            </ul>
+        </nuv>       
         <article class="main-content">
             <div class="content">
                 <h5 class="content__reviews">Отзывы</h5>

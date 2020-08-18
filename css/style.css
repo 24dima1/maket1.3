@@ -23,6 +23,7 @@ body{
   padding-right: 15px;   
   padding-top: 16px;
   padding-bottom: 16px;
+  padding-left: 30px;
   background: #FFFFFF; 
   }
 button {
@@ -57,9 +58,9 @@ li:visited{
 .header__services__item:hover{
   background: #FFFFFF; 
 }
-.header, html, .main-nav,
+body, .header-nav, .header, html, .main-nav,
 .header__services__item,
-.main-order__button, .header__feedback_li, .main-nav,
+.main-order__button, .header__feedback-item, .main-nav,
 .div-header__menu-button, .div-header__menu-button,.header-burger,
 .header__feedback, .main-nav,.title,
 .main-order__button,.items-nav,.header__services, .content,
@@ -69,8 +70,8 @@ li:visited{
   margin-left: auto;
   margin-right: auto;
 }
-.header__services_ul,
-.header__feedback_ul
+.header__services-list,
+.header__feedback-list
 {  
   display: flex;
   justify-content: space-between;
@@ -91,13 +92,13 @@ li
   background: #F8F8F8;
   box-sizing: border-box;    
 }
-.header__feedback_li--border{
+.header__feedback-item--border{
   border-right: 3px solid #EAEAEA;  
   border-radius: 1px;
   box-sizing: border-box; 
   padding-right: 15px;
   }  
-.header__feedback_li--padding :hover{
+.header__feedback-item--padding :hover{
   padding-left: 0px;
 }
 a:hover{
@@ -161,7 +162,7 @@ a{
 }
 .main__img{
   width:531px ; 
-  heisght:307px ; 
+  height:307px ; 
   box-sizing: border-box;
 }
 .main_details {
@@ -199,7 +200,7 @@ a{
   line-height: 24px;
   margin-top: 0px;
 } 
-.header__feedback_li--padding{
+.header__feedback-item--padding{
   padding-left: 0px;
 }
 .block-header__button-repair::after{
@@ -219,9 +220,9 @@ a{
 }
 
 @media (min-width: 1120px){
-  .header__feedback_li--call,
-  .header__feedback_li--chat,
-  .header__feedback_li--border,
+  .header__feedback-item--call,
+  .header__feedback-item--chat,
+  .header__feedback-item--border,
   .div-header__menu-button,
   .div-header__button,
   .logo{    
@@ -230,13 +231,13 @@ a{
     margin:  0px 0px 0px 0px;
     display: none;  
   } 
-  .header__feedback_li--padding{
+  .header__feedback-item--padding{
     transform: translate(530px,85px);
   }
-  .header__feedback_li--height{
+  .header__feedback-item--height{
     transform: translate(190px,85px);
   }
-  .header__feedback_ul{
+  .header__feedback-list{
     margin-top: -50px;
   }
   
@@ -250,16 +251,18 @@ a{
   .logo__link{
     background-color: #ffffff;
   }  
-  .header__li{
+  .header__services-item{
     background-color: #F8F8F8;
   }
   .main-order__span,
-  .main-order__statusspan{
+  .main-order__statusspan,
+  .content__reviews{
     display: none;
   }
   .header-burger,
   .div-header__button{
     border-right: 3px solid #EAEAEA; 
+    padding-right:25px;;
     height: 40px;
   } 
   .main-order__span{    
@@ -283,8 +286,9 @@ a{
   .logo{
     background: #FFFFFF;
   }
-  .header__feedback{       
-    padding-right: 15px;   
+  .header__feedback-list{
+    padding-right: 15px; 
+    padding-left: 450px;  
     background: #FFFFFF;  
   }
   div  li{
@@ -303,13 +307,14 @@ a{
 @media  (max-width: 768px) {
   .main-order__span,
   .main-order__statusspan,
-  .header__feedback_li--call,
-  .header__feedback_li--chat,
-  .header__feedback_li--border,
+  .header__feedback-item--call,
+  .header__feedback-item--chat,
+  .header__feedback-item--border,
   .header__services__item--prices, 
   .header__services__item--address, 
   .header__services__item--discounts,
-  .header__services__item--repairs{
+  .header__services__item--repairs,
+  .content__reviews{
     display: none;
   }
   .div-header__button,
@@ -343,13 +348,13 @@ a{
     display: flex;
     justify-content:space-evenly;         
   }
-  .header__feedback{
-    width: 50%;
+  .header__feedback-list{    
     display: flex;        
     justify-content: center; 
-  }  
-  .header__feedback_li--padding, 
-  .header__feedback_li--height{
+    width: 50%;
+  }
+  .header__feedback-item--padding, 
+  .header__feedback-item--height{
     display: flex;
     background-color:#ffffff;
     border: 0px solid #ffffff;
@@ -373,7 +378,7 @@ a{
   .block-header-header__services{
     width: 90%;
   }
-  .header__feedback_li--height
+  .header__feedback-item--height
   {
     height: 40px;
     padding-right: 15px;
@@ -388,7 +393,7 @@ a{
     margin-top: 6px;
     background: #ffffff;
   }  
-  .header__feedback_ul{
+  .header__feedback-list{
     border-left: 3px solid #EAEAEA; 
     display: flex;
     justify-content:space-evenly;
