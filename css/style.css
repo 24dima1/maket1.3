@@ -55,22 +55,17 @@ li:visited{
   background: #FFFFFF;
   box-sizing: border-box;
 }
-.header__services__item:hover{
+.main__nav_link-item:hover{
   background: #FFFFFF; 
 }
-body, .header-nav, .header, html, .main-nav,
-.header__services__item,
-.main-order__button, .header__feedback-item, .main-nav,
-.div-header__menu-button, .div-header__menu-button,.header-burger,
-.header__feedback, .main-nav,.title,
-.main-order__button,.items-nav,.header__services, .content,
-.content__reviews, .main-section,
-.main__img
+.container,
+.header__feedback-item, 
+.header__feedback
 {
   margin-left: auto;
   margin-right: auto;
 }
-.header__services-list,
+/*.main__nav-list,*/
 .header__feedback-list
 {  
   display: flex;
@@ -80,6 +75,16 @@ body, .header-nav, .header, html, .main-nav,
   font-size: 16px;
   line-height: 24px;   
   padding-left: 0px;        
+}
+.main__nav-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  font-family: "TTLakes-Medium";
+  font-size: 16px;
+  line-height: 24px;   
+  padding-left: 0px;
 }
 li
 {
@@ -91,6 +96,11 @@ li
   border-radius: 6px;
   background: #F8F8F8;
   box-sizing: border-box;    
+}
+.header__feedback-item,
+.logo__link{
+  padding-top: 5px;
+
 }
 .header__feedback-item--border{
   border-right: 3px solid #EAEAEA;  
@@ -137,6 +147,7 @@ a{
 }
 .block-header-header__services{
   display: flex;
+  
   justify-content: space-between; 
   list-style: none;
   padding: 0;
@@ -144,28 +155,30 @@ a{
   text-align: center;
   width: 100%;
 } 
-.main-content{
+.main__article{
   box-sizing: border-box;   
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   margin-top: 0;
-  padding:  34px 34px 34px 34px;
+  padding:  0px 34px 34px 34px;
   width: 100%;
 }
-.main-section{
+.article__image{
   box-sizing: border-box;
   width:531px ; 
   height:384px ; 
   display: flex;
   align-items: center;
 }
+/*
 .main__img{
   width:531px ; 
   height:307px ; 
   box-sizing: border-box;
 }
-.main_details {
+*/
+.article__btn-see-more {
   display: block;
   font-family: "TTLakes-Medium";
   font-size: 16px;
@@ -173,17 +186,16 @@ a{
   letter-spacing: -0.2px;
   color: #1B1C21;
 }
-.main_details ::-webkit-details-marker {
+.article__btn-see-more ::-webkit-details-marker {
   display: none;
 }
-.main_details::before {
+.article__btn-see-more::before {
   content:url(../img/icon1.jpg) ;
   padding-right: 5px;  
 }
 .content_p{
   box-sizing: border-box;    
-  height: 165px;
-  width: 490px;
+  
   font-family: "TTLakes-Regular";
   font-size: 14px;
   line-height: 20px;
@@ -193,13 +205,18 @@ a{
   margin-left: auto;
   margin-right: auto;
 }
+.wrapper{
+  height: 165px;
+  width: 490px;
+}
+/*
 .content__reviews{
   color:#7E7E82;
   font-family: "TTLakes-Medium";
   font-size: 16px;
   line-height: 24px;
   margin-top: 0px;
-} 
+} */
 .header__feedback-item--padding{
   padding-left: 0px;
 }
@@ -218,6 +235,9 @@ a{
   width: 70px;
   padding-top: 5px;
 }
+.main__nav_link-item--reviews{
+  padding-top:15px;
+}
 
 @media (min-width: 1120px){
   .header__feedback-item--call,
@@ -231,6 +251,7 @@ a{
     margin:  0px 0px 0px 0px;
     display: none;  
   } 
+  
   .header__feedback-item--padding{
     transform: translate(530px,85px);
   }
@@ -251,12 +272,24 @@ a{
   .logo__link{
     background-color: #ffffff;
   }  
-  .header__services-item{
+  .main__nav-list{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    font-family: "TTLakes-Medium";
+    font-size: 16px;
+    line-height: 24px;   
+    padding-left: 0px;        
+  }
+  .main__nav-item{
     background-color: #F8F8F8;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .main-order__span,
   .main-order__statusspan,
-  .content__reviews{
+  .main__nav_link-item--reviews{
     display: none;
   }
   .header-burger,
@@ -310,11 +343,11 @@ a{
   .header__feedback-item--call,
   .header__feedback-item--chat,
   .header__feedback-item--border,
-  .header__services__item--prices, 
-  .header__services__item--address, 
-  .header__services__item--discounts,
-  .header__services__item--repairs,
-  .content__reviews{
+  .main__nav_link-item--prices, 
+  .main__nav_link-item--address, 
+  .main__nav_link-item--discounts,
+  .main__nav_link-item--repairs,
+  .main__nav_link-item--reviews{
     display: none;
   }
   .div-header__button,
@@ -331,15 +364,20 @@ a{
     background-color: #FFFFFF; 
     border-bottom: 1px solid #D9FFF5;   
   }
-  body, .main-section, main,
-  .content_p, .main__img, .div-header,
-  .content__reviews,
-  .content{
+  body, .article__image, main,
+  .div-header, .wrapper,
+  .article__content, .content_p{
+    
     width: 100%;
   }      
-  .main-section{
+  .article__image{
     height: 15%;
-  }
+    width: 100vw;
+    margin-left: -34px;
+    }
+    .article__image > img{
+      width: 100vw; 
+    }
   .content_p{
     overflow: auto;
   }
@@ -371,7 +409,7 @@ a{
   .main{
     height: 55%; 
   }
-  .main-content{  
+  .main__article{  
     flex-direction: column;
     width: 100%;
   }
