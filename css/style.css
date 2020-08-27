@@ -15,16 +15,17 @@ body{
 }
 
 .logo__img{
-  padding-left: 0px;
-  width: 25px;
+  padding-left: 0px;  
   margin-left: 0px;
+  width: 97px;
+  height: 50px;
 }
 .div-header__menu-button{  
   display: flex;
   justify-content: center;
   align-content: space-between;
   box-sizing: border-box;
-  padding-right: 15px;   
+  padding-right: 16px;   
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 30px;
@@ -58,6 +59,12 @@ button[type="button"]:visited{
   border-radius: 6px;
   background: #FFFFFF;
   box-sizing: border-box;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+.header__services-item{
+  padding-bottom: 8px;
+  padding-top: 8px
 }
 .header__services_link-item:hover{
   background: #FFFFFF; 
@@ -88,7 +95,9 @@ button[type="button"]:visited{
   font-family: "TTLakes-Medium";
   font-size: 16px;
   line-height: 24px;   
-  padding-left: 0px;
+  padding-left: 16px;
+  padding-top: 24px;
+  
 }
 li
 {
@@ -107,6 +116,7 @@ li
   padding-bottom: 0px;
   width: 80px;
   height: 45px;
+  box-sizing: border-box  ;
 }
 .header__feedback-item--border{
   border-right: 3px solid #EAEAEA;  
@@ -140,14 +150,14 @@ a{
   line-height: 40px;
   list-style-type: none;
   color: #1B1C21;
-  margin:  42px 0px 0px 0px;
-  padding:  0px s0px 0px 0px;
+  margin-bottom: 42px;  
   border-left: 3px solid aqua;  
   border-radius: 1px;
   margin-left: 0px;
   padding-left: 35px;
   text-align: center;
-   display: flex;
+  display: flex;
+   
 }
 .block-header-header__services{
   display: flex;
@@ -182,8 +192,8 @@ a{
   line-height: 24px;
   letter-spacing: -0.2px;
   color: #1B1C21;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 0px;
+  padding-bottom: 14px;
 
 }
 .article__btn-see-more ::-webkit-details-marker {
@@ -203,15 +213,16 @@ a{
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0px;
+  padding-bottom: 16px;
+
 }
 .wrapper{
   height: auto;
   width: 100%;
 
 }
-.header__feedback-item--padding{
-  padding-left: 0px;
-}
+
 .block-header__button-repair::after{
   content: url("../img/repair.png");
   background-repeat: no-repeats;     
@@ -246,6 +257,10 @@ span{
     margin:  0px 0px 0px 0px;
     display: none;  
   }
+  .title{
+    margin-top: 48px; 
+  }
+   
   .header__feedback-item--border{
     border-right: 3px solid #EAEAEA;  
     border-radius: 1px;
@@ -256,10 +271,10 @@ span{
     height: 50px;
   }
   .header__feedback-item--padding{
-    transform: translate(530px,75px);
+    transform: translate(450px,75px);
   }
   .header__feedback-item--height{
-    transform: translate(190px,75px);
+    transform: translate(120px,75px);
   }
   .header__feedback-list{
     margin-top: -50px;
@@ -300,6 +315,7 @@ span{
     background-color: #F8F8F8;
     padding-left: 0px;
     padding-right: 0px;
+
   }
   .main-order__span--order,
   .main-order__statusspan,
@@ -324,7 +340,7 @@ span{
     box-sizing: border-box; 
     justify-content:space-around;
     background-color:  #FFFFFF;
-    border-bottom: 2px solid #D9FFF5;
+    border-bottom: 1px solid #D9FFF5;
   }
   .logo__img{        
     width: 70px;
@@ -341,11 +357,19 @@ span{
   .block-header__button-repair, 
   .block-header__button-status{
     background: #FFFFFF;
-    padding:0px;    
+      
   }
   .block-header__button-repair{
     border-left: 3px  solid  #EAEAEA
   }
+  .title{
+    margin:  24px 0px 0px 0px;
+    padding-left: 24px;
+  }  
+  .wrapper{
+    padding-right: 48px;
+    
+  } 
   
 }
 
@@ -354,10 +378,17 @@ span{
   .main-order__statusspan,
   .header__feedback-item--call,
   .header__feedback-item--chat,
-  .header__feedback-item--border,
-  .header__services_link-item--reviews{
+  .header__feedback-item--border
+  {
     display: none;
   }
+  .header__services_link-item--reviews{
+    padding-top:0px;
+  }
+  .title{
+    margin-bottom:  24px;
+    padding-left: 16px;
+  }   
   .header__services-list{
     display: flex;
     flex-wrap: nowrap;    
@@ -365,25 +396,35 @@ span{
     font-size: 16px;
     line-height: 24px;   
     padding-left: 0px;
-  } 
-  .header__services-list{
     white-space: nowrap;
-    overflow:auto;
-  }
+    overflow:auto;    
+    margin-top: 0px;
+    padding-bottom: 24px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+  } 
+ 
   .div-header__button,
   .logo__link{
     background-color: #FFFFFF; 
   } 
+  .logo__link{
+    padding-left: 16px;
+  }
   .div-header{
-    box-sizing: border-box;
     display:flex;
+    box-sizing: border-box;
     justify-content:space-around;
     height: 16%;
     width: 100%;
     margin-left: auto;
-    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
     background-color: #FFFFFF; 
-    border-bottom: 1px solid #D9FFF5;   
+    border-bottom: 1px solid #D9FFF5;
+    padding-left: 16px;
+    padding-right: 16px;
+      
   }
   body, .article__image, main,
   .div-header, .wrapper,
@@ -393,31 +434,39 @@ span{
   .article__image{
     height: 15%;
     width: 100vw;
-    margin-left: -34px;
+    margin-left: -16px;
        }
     .article__image > img{
       width: 100vw; 
     }
     .div-header__menu-button{
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content:center;         
+  }
+  .header__feedback-item--padding{
+    padding-left: 0px;
+    padding-top: 17px;
   }
   
   .header__feedback-item--padding, 
   .header__feedback-item--height{
     background-color:#ffffff;
     border: 0px solid #ffffff;
-  }
+       }
   .block-header__button,
   .block-header__button-status,
   .block-header__button-repair{
-    background-color: #FFFFFF;   
+    box-sizing: border-box;
+    background-color: #FFFFFF;  
+    height: 28px; 
   }
-  .logo__img{
-    width: 70px;
-    height: 40px;
-  }    
+  .block-header__button-repair{    
+    padding-right: 0px;
+    padding-left: 0px;  
+    box-sizing: border-box;  
+    border-left: 2px solid #EAEAEA;
+    }
   .main{
     height: 55%; 
   }
@@ -425,35 +474,53 @@ span{
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 0 16px 16px 16px;
   }
   .block-header-header__services{
     width: 90%;
   }
   .header__feedback-item--height
-  {
-    height: 40px;
+  { 
+    padding-top: 12px;   
     padding-right: 15px;
     margin-right: 0px;
     border-right-width: 0px;
     border-left-width: 0px;
     border-top-width: 0px;
     border-bottom-width: 0px;
+    padding-left: 0;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+  }
+  .block-header__button-status{
+    width: 40px;
+    height: 28px;
+    padding-top: 8px;
+ 
   }
   .block-header__pmg-status{
     padding-right: 0px;
     margin-top: 6px;
     background: #ffffff;
+ 
   }  
   .header__feedback-list{
-    border-left: 3px solid #EAEAEA; 
-    width: 50%;
+    width: 40%;
   }
   .article__content{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
-  
-     
+  .content_p-two{
+    display: none;
+  }
+  .content_p{
+    line-height: 18px;
+  }
+
+
+   
 }
 
