@@ -292,7 +292,7 @@ span{
     margin-top: 0px;
     padding-top: 0px;
     margin-bottom: 0px;
-    padding-bottom: 0px;    
+    padding-bottom: 0px;   
   } 
   /*main styles start*/
   .wrapper{
@@ -340,6 +340,7 @@ span{
     justify-content: center;
     width: 20%;
     padding-left: 0px;
+    margin-right: 10px
   }
   .article__image > img{
     border-radius: 7px;
