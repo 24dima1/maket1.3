@@ -340,7 +340,7 @@ span{
     justify-content: center;
     width: 20%;
     padding-left: 0px;
-    margin-right: 30px
+    margin-right: 10px
   }
   .article__image > img{
     border-radius: 7px;
@@ -378,7 +378,7 @@ span{
 
   .div-header__button{
     border-right: 2px solid #EAEAEA; 
-    padding-right:30px;
+    padding-right:15px;
     height: 28px;
     padding-left: 15px;
     margin-top: 20px;    
@@ -390,7 +390,7 @@ span{
   }
   
   .logo__link{
-    padding-left: 40px;
+    padding-left: 10px;
     margin-right: 90px;
     height: 60px;
   }
@@ -418,22 +418,24 @@ span{
   }
   .header__feedback-list{
     display: flex;
-    justify-content: space-around;
-    width: 20%;
-    padding-left: 280px;
-    padding-right: 60px;
+    justify-content: flex-end;
+   
+    padding-left: calc(100% - 570px);
+    /*padding-left:280px ;
+     width: calc(100% - 530px);
+    padding-right: 60px;*/
   }
   .block-header__button,
   .block-header__button-repair, 
   .block-header__button-status{
     background: #FFFFFF;
-    height: 28px;      
+    height: 32px;      
   }
   .block-header__button-status{
     padding-right: 15px;
   }
   .block-header__button-repair{
-    height: 28px; 
+    height: 32px; 
     border-left: 2px  solid  #EAEAEA;
     padding-left:10px;
   }
@@ -455,6 +457,9 @@ span{
     min-width: 360px;
     min-height: 260px;
   }
+  .header__feedback-item--padding{    
+    margin-right: 30px;
+  }
   
 }
 
@@ -473,18 +478,17 @@ span{
   }
   .logo{    
    margin-top: 13px;
+   /*padding-right: calc(100% - 365px);
+   calc(100% - 50px);*/
   }
   .header__services_link-item--reviews{
     padding-top:0px;
   }
   .header__user-list{
+    box-sizing: border-box;
     display: flex;
-    justify-content: center;
-    width: 40%;    
-    margin-right: 40px;
-    padding-left: 15px;
-
-  }
+    padding-left: calc(100% - 350px);
+   }
   
   .title{
     margin-bottom:  24px;
@@ -518,7 +522,6 @@ span{
   .div-header{
     display:flex;
     box-sizing: border-box;
-    justify-content:space-around;
     height: 16%;
     width: 100%;
     margin-left: auto;
@@ -526,10 +529,7 @@ span{
     margin-bottom: 24px;
     background-color: #FFFFFF; 
     border-bottom: 1px solid #D9FFF5;
-    padding-left: 16px;
-    padding-right: 16px;
-      
-  }
+      }
   body, .article__image, main,
   .wrapper,
   .article__content, .content_p{    
@@ -569,7 +569,7 @@ span{
     padding-right: 0px;
     box-sizing: border-box;  
     border-left: 2px solid #EAEAEA;    
-    padding-left: 25px;
+    padding-left: 20px;
     }
   .main{
     height: 55%; 
