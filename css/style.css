@@ -6,13 +6,27 @@ html{
   box-sizing: inherit;
 }
 body{
-  width: 1120px;
-  height: 535px;
+  /*width: 1120px;
+  height: 535px;*/
   box-sizing: border-box;
   background: #F8F8F8;
   margin:  0px 0px 0px 0px;
-  font-family: "TTLakes-Medium";   
+  font-family: "TTLakes-Medium";
+  overflow-x: hidden;   
+  position: absolute;
 }
+
+.container{
+  display: block;
+  position: relative;
+  width: 1120px;
+  height: 535px;
+  padding-right: 30px;
+  margin: 0 auto;
+  }
+/*header start*/
+
+/*header end*/
 
 .logo__img{
   padding-left: 0px;  
@@ -69,7 +83,7 @@ button[type="button"]:visited{
 .header__services_link-item:hover{
   background: #FFFFFF; 
 }
-.container,
+/*.container,*/
 .header__feedback-item, 
 .header__feedback, 
 .div-header__menu-button
@@ -303,6 +317,7 @@ span{
   }
   .container{
     padding-right: 30px;
+   /* margin: 0 auto;*/
   }
 }
 
@@ -320,8 +335,16 @@ span{
     padding-left: 0px;
     padding-top: 0px
   } 
+  .container{
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 100hw;
+    padding-right: 30px;
+    margin: 0 auto;
+    }
   main,
-  .header, .div-header,
+  .header, .wrapper-header,
   .header__services,
   .title {
     width: 100vw;
@@ -397,7 +420,7 @@ span{
   body, header{
     width: 100vw;
   }
-  .div-header{ 
+  .wrapper-header{ 
     box-sizing: border-box;   
     height: 16%;
     width: 100vw;
@@ -472,6 +495,14 @@ span{
   {
     display: none;
   }
+  .container{
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 100hw;
+    padding-right: 30px;
+    margin: 0 auto;
+    }
   .header__feedback-item{
    margin-right: 0px;
    margin-left: 0px;
@@ -519,11 +550,11 @@ span{
   .logo__link{
     padding-left: 16px;
   }
-  .div-header{
+  .wrapper-header{
     display:flex;
     box-sizing: border-box;
     height: 16%;
-    width: 100%;
+    min-width: 100vw;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 24px;
@@ -544,7 +575,7 @@ span{
       width: 100vw; 
     }
     .div-header__menu-button{
-    width: 60%;
+    width: ;
     display: flex;
     justify-content:center;         
   }
@@ -581,7 +612,7 @@ span{
     padding: 0 16px 16px 16px;
   }
   .block-header-header__services{
-    width: 90%;
+    width: 100vw;
   }
   .header__feedback-item--height
   { 
@@ -610,7 +641,7 @@ span{
  
   }  
   .header__feedback-list{
-    width: 40%;
+    width:;
     display: none;
   }
   .article__content{
